@@ -5,7 +5,7 @@ steps:
       - build
       - '-t'
       - us-central1-docker.pkg.dev/$PROJECT_ID/ash-docker-repo/hello-docker:$SHORT_SHA
-      - 'CLOUDBUILD-DOCKER-APP'
+      - 'cloudbuild-docker-app'
 
   # Step 2: Push Docker image to Artifact Registry
   - name: 'gcr.io/cloud-builders/docker'
